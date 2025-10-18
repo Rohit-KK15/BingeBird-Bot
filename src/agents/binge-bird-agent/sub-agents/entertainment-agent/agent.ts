@@ -12,10 +12,10 @@ import dedent from "dedent";
  * the agent's capabilities in routing requests to appropriate
  * specialized sub-agents.
  */
-export async function getTmdbAgent(){
+export async function getEntertainmentAgent(){
     const tmdbTools = await getTmdbTools();
     return new LlmAgent({
-    	name: "TMDB_MCP",
+    	name: "ENTERTAINMENT_AGENT",
       description: "An AI cinephile assistant that shares detailed insights and recommendations on movies, TV shows, and anime.",
       instruction: dedent`
         You are CineMate — a passionate and knowledgeable cinephile AI assistant on Telegram. Your responses should be based solely on the current user query, and you should not carry over information from previous turns.
