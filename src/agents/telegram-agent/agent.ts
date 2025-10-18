@@ -5,7 +5,7 @@ import { model } from "../../env.js";
 export const getTelegramAgent = async (samplingHandler: SamplingHandler) => {
 	const telegramMcpTools = await getTelegramTools(samplingHandler);
 	return AgentBuilder
-		.create("telegram_agent")
+		.create("TELEGRAM_AGENT")
 		.withModel(model)
 		.withTools(...telegramMcpTools)
 		.build();
