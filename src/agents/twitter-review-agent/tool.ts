@@ -1,5 +1,5 @@
 import { createTool, type BaseTool } from "@iqai/adk";
-import { postTweet } from "./twitterApi.js";
+import { twitterService } from "../../services/twitter.js";
 import { z } from 'zod';
 
 export const getTwitterReviewTools = async (): Promise<BaseTool[]> => {
@@ -10,7 +10,7 @@ export const getTwitterReviewTools = async (): Promise<BaseTool[]> => {
 			tweetText: z.string().max(280).describe("The content of the tweet (max 280 characters)."),
 		}),
 		fn: async ({ tweetText }: { tweetText: string }) => {
-			return await postTweet(tweetText);
+			return await twitterService.postTweet(tweetText);
 		},
 	});
 
