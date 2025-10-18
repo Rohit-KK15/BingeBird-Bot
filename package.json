@@ -1,0 +1,46 @@
+{
+	"name": "bingebird-agent",
+	"version": "0.0.1",
+	"description": "bingebird-agent is an entertainment based telegram bot that fetches information about Movies/TvShows and helps in posting reviews in Twitter/X",
+	"main": "dist/index.js",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsx watch src/index.ts",
+		"start": "node dist/index.js",
+		"clean": "rimraf dist",
+		"prebuild": "pnpm clean"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IQAICOM/adk-agent-starter.git"
+	},
+	"keywords": [
+		"ai",
+		"agent",
+		"mcp",
+		"adk-ts",
+		"IQAI"
+	],
+	"author": "RohitKK",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/IQAICOM/adk-agent-starter/issues"
+	},
+	"homepage": "https://github.com/IQAICOM/adk-agent-starter#readme",
+	"dependencies": {
+		"@iqai/adk": "^0.4.0",
+		"@iqai/adk-cli": "^0.3.16",
+		"@openrouter/ai-sdk-provider": "^1.2.0",
+		"dotenv": "^17.2.2",
+		"twitter-api-v2": "^1.27.0",
+		"zod": "^4.1.5"
+	},
+	"devDependencies": {
+		"@types/node": "^24.3.1",
+		"rimraf": "^6.0.1",
+		"tsx": "^4.20.5",
+		"typescript": "^5.9.2"
+	}
+}

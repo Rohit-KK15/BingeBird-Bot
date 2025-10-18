@@ -1,0 +1,4 @@
+.adk-cache
+node_modules
+.env
+dist
