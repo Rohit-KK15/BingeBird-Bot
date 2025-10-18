@@ -1,7 +1,7 @@
 import { AgentBuilder } from "@iqai/adk"
-import { model } from "../env.js"
-import { getTmdbAgent } from "./entertainment-agent/agent.js"
-import { getTwitterReviewAgent } from "./twitter-review-agent/agent.js"
+import { model } from "../../env.js"
+import { getTmdbAgent } from "./sub-agents/entertainment-agent/agent.js"
+import { getTwitterReviewAgent } from "./sub-agents/twitter-review-agent/agent.js"
  
 export const getRootAgent = async () =>{
     const tmdbAgent= await getTmdbAgent();

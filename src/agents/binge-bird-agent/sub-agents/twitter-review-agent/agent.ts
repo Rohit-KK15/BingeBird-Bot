@@ -1,5 +1,5 @@
 import { LlmAgent } from "@iqai/adk";
-import { model } from "../../env.js";
+import { model } from "../../../../env.js";
 import { getTwitterReviewTools } from "./tool.js";
 
 export async function getTwitterReviewAgent(){

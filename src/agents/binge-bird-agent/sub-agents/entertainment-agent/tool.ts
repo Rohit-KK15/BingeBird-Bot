@@ -1,5 +1,5 @@
 import { type BaseTool, McpConfig, McpToolset } from "@iqai/adk";
-import { env } from "../../env.js"
+import { env } from "../../../../env.js"
 import dotenv from "dotenv"
 
 dotenv.config();

@@ -1,5 +1,5 @@
 import { createSamplingHandler } from "@iqai/adk";
-import { getRootAgent } from "./agents/agent.js";
+import { getRootAgent } from "./agents/binge-bird-agent/agent.js";
 import { getTelegramAgent } from "./agents/telegram-agent/agent.js";
 
 

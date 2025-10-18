@@ -1,5 +1,5 @@
 import { createTool, type BaseTool } from "@iqai/adk";
-import { twitterService } from "../../services/twitter.js";
+import { twitterService } from "../../../../services/twitter.js";
 import { z } from 'zod';
 
 export const getTwitterReviewTools = async (): Promise<BaseTool[]> => {
