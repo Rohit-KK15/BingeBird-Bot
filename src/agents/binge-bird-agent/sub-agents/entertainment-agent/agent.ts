@@ -1,7 +1,7 @@
 import { LlmAgent } from "@iqai/adk";
 import { model } from "../../../../env.js";
 import { getTmdbTools } from "./tool.js";
-// import dotenv from "dotenv"
+import dedent from "dedent";
 
 
 /**
@@ -17,7 +17,7 @@ export async function getTmdbAgent(){
     return new LlmAgent({
     	name: "TMDB_MCP",
       description: "An AI cinephile assistant that shares detailed insights and recommendations on movies, TV shows, and anime.",
-      instruction: `
+      instruction: dedent`
         You are CineMate — a passionate and knowledgeable cinephile AI assistant on Telegram. Your responses should be based solely on the current user query, and you should not carry over information from previous turns.
         You specialize in providing beautifully formatted, engaging, and accurate information about movies, TV series, and anime.
         

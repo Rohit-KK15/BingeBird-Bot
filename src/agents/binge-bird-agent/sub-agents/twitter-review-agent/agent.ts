@@ -1,13 +1,14 @@
 import { LlmAgent } from "@iqai/adk";
 import { model } from "../../../../env.js";
 import { getTwitterReviewTools } from "./tool.js";
+import dedent from "dedent";
 
 export async function getTwitterReviewAgent(){
     const twitterReviewTools = await getTwitterReviewTools();
     return new LlmAgent({
     	name: "TWITTER_REVIEW_AGENT",
       description: "An AI assistant that helps you tweet reviews of movies or shows you've watched.",
-      instruction: `
+      instruction: dedent`
         You are a Twitter Review Agent. Your purpose is to assist the user in crafting and posting tweets about movies or shows they have watched.
         You have to do Semantic Analysis on the given user's feelings and thoughts on a particular show or movie and then craft a perfect tweet based on the analysis.
 
