@@ -10,8 +10,9 @@ export const addToWatchlist = createTool({
 		type: z.enum(["movie", "tv_show"]).describe("The type of media (movie or tv_show)."),
 		releaseYear: z.number().optional().describe("The release year of the movie or TV show."),
 		genre: z.array(z.string()).optional().describe("An array of genres for the movie or TV show."),
+        imdb: z.number().optional().describe("The IMDB rating of the movie or TV show.")
 	}),
-	fn: ({ title, type, releaseYear, genre }, context) => {
+	fn: ({ title, type, releaseYear, genre, imdb }, context) => {
 		const watchlist: WatchlistItem[] = context.state.get(
 			"watchlist",
 			[],
@@ -21,9 +22,10 @@ export const addToWatchlist = createTool({
 			title: title,
 			type: type,
 			releaseYear: releaseYear,
+            imdb: imdb,
 			genre: genre,
 			watched: false,
-			addedAt: new Date().toISOString(),
+			addedOn: new Date().toLocaleDateString('en-CA'),
 		};
         watchlist.push(newWatchlistItem);
 		context.state.set("watchlist", watchlist);
