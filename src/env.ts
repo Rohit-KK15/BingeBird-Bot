@@ -17,6 +17,7 @@ export const envSchema = z.object({
 	LLM_MODEL: z.string().default("openai/gpt-4.1"),
 	TMDB_API_KEY: z.string().min(1),
 	OMDB_API_KEY: z.string().min(1),
+	DATABASE_URL: z.string().min(1),
 	TELEGRAM_BOT_TOKEN: z.string().min(1),
 	TWITTER_API_KEY: z.string().min(1),
 	TWITTER_API_SECRET: z.string().min(1),
