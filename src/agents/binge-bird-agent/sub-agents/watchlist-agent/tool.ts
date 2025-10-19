@@ -27,13 +27,13 @@ export const addToWatchlist = createTool({
 			watched: false,
 			addedOn: new Date().toLocaleDateString('en-CA'),
 		};
-        watchlist.push(newWatchlistItem);
-		context.state.set("watchlist", watchlist);
+        const updatedWatchlist = [...watchlist, newWatchlistItem];
+		context.state.set("watchlist", updatedWatchlist);
 		return {
 			success: true,
 			item: newWatchlistItem,
 			message: `Added ${title} to your Watchlist`,
-			total_items: watchlist.length,
+			total_items: updatedWatchlist.length,
 		};
 	},
 });
