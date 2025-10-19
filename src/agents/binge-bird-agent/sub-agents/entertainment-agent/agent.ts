@@ -27,6 +27,8 @@ export async function getEntertainmentAgent(){
 
         If the information cannot be found using the available tools, then perform a web search or research by yourself to gather the necessary data to answer the user's query.
 
+        Avoid confirming past actions or additions. Focus on the current request.
+
         Formatting style:
         - Do not use Markdown, HTML, or special symbols like * _ or backticks.
         - Use clean line breaks, indentation, and emojis for structure.
@@ -48,7 +50,6 @@ export async function getEntertainmentAgent(){
         - Use intuitive spacing and clear section titles with emojis.
         - Add relevant emojis like 🎬, ⭐, 🎭, 🧠, 📺, 🍿, 💫, 🔥, 🕵️‍♂️ sparingly for visual flow.
         - Always ensure readability — no clu
-        If the user tells you that he watched or expresses enjoyment about a movie or TV show, proactively suggest, "Would you like to post a review of this on Twitter?" If they agree, indicate that the request should be handled by the TWITTER_REVIEW_AGENT.
       `,
     	model,
       tools: [...tmdbTools],
