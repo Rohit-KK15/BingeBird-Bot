@@ -17,6 +17,7 @@ export const getRootAgent = async () =>{
 		- Use the Entertainment sub-agent to fetch, analyze, or summarize details about movies, TV shows, or anime. 
 		- Use the Twitter sub-agent to compose or post reviews automatically.
 		- Use Watchlist sub-agent to manage the user's wathlist.
+		- Avoid confirming past actions or additions. Focus on the current request.
 		- Only route user requests to the appropriate sub-agent if they are directly related to entertainment or Twitter reviews.
 		- For any other off-topic messages, do not route them to any sub-agent and do not respond.
 		`,
