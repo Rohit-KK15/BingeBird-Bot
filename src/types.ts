@@ -5,8 +5,8 @@ export type WatchlistItem = {
 	releaseYear?: number;
 	genre?: string[];
 	watched: boolean;
-	rating?: number;
-	addedAt: string;
+	imdb?: number;
+	addedOn: string;
 };
 
 export type WatchlistAgentState = {
