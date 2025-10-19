@@ -6,7 +6,7 @@
 
 </div>
 
-BingeBird is an entertainment-based AI Agent integrated as a Telegram Bot that fetches information about Movies, TV Shows, Anime, and all types of entertainment. It helps users craft review tweets and automatically post them on X (formerly Twitter), and also manages a user's watchlist.
+BingeBird is an entertainment-based AI Agent integrated as a Telegram Bot that fetches information about Movies, TV Shows, Anime, and all types of entertainment. It helps users craft review tweets and automatically post them on X (formerly Twitter), and also manages a user's watchlist. The entertainment sub-agent leverages the [Entertainment MCP](https://github.com/Rohit-KK15/entertainment-mcp) (Model Context Protocol) server, also developed by me.
 
 ## Features
 - Fetches detailed information about movies, TV shows, anime, and other entertainment content.
