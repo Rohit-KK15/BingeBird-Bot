@@ -1,0 +1,14 @@
+{
+    "$schema": "https://backboard.railway.app/railway.schema.json",
+    "build": {
+        "builder": "RAILPACK",
+        "buildCommand": "pnpm install && pnpm run build",
+        "watchPatterns": ["/**"]
+    },
+    "deploy": {
+        "startCommand": "pnpm start",
+        "healthcheckPath": "/",
+        "healthcheckTimeout": 300,
+        "restartPolicyType": "ON_FAILURE"
+    }
+}
