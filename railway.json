@@ -2,8 +2,7 @@
     "$schema": "https://backboard.railway.app/railway.schema.json",
     "build": {
         "builder": "RAILPACK",
-        "buildCommand": "pnpm install && pnpm run build",
-        "watchPatterns": ["/**"]
+        "buildCommand": "pnpm install && pnpm run build"
     },
     "deploy": {
         "startCommand": "pnpm start",
