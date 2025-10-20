@@ -50,8 +50,7 @@ export async function getEntertainmentAgent(){
 			      - Always show the current state of the watchlist after operations.
 			      - Be helpful and suggest actions when the user seems unsure.
 			      - Before adding a movie or TV show to the watchlist, you *must* first fetch its details (IMDB rating, release year, type (movie or TV show), and genre(s)). Then, use the 'addToWatchlist' tool with this fetched data along with the title of the movie or TV show.
-			      - Remind users they can mark items as watched when they finish them.
-            - If the user has watched an item and wants you to mark it as watched, ask them if they want to remove it from the watchlist.
+			      - If the user mentions about complete watching an item which is present in the watchlist, mark it as watched and ask them if they want to tweet about it. Also remind them that they can aslo remove it from the watchlist if they want to.
             - Before adding an item to the watchlist, first check if the item already exists. If it does, inform the user and do not add it again. If it does not exist, then proceed to fetch details and add the item.
 
             GENERAL GUIDELINES:
