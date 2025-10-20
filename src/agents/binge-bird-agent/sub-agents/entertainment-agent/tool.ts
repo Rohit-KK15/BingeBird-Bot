@@ -143,7 +143,7 @@ export const getTmdbTools = async () => {
 		transport: {
 			mode: "stdio",
 			command: "npx",
-			args: ["entertainment-mcp"],
+			args: ["-y","entertainment-mcp"],
 			env: {
 				TMDB_API_KEY: env.TMDB_API_KEY,
 				OMDB_API_KEY: env.OMDB_API_KEY,
