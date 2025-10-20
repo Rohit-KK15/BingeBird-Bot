@@ -30,14 +30,9 @@ export const envSchema = z.object({
  * Throws an error if required environment variables are missing or invalid.
  */
 export const env = envSchema.parse(process.env);
-export let model: string | LanguageModelV2;
-
-if (env.OPEN_ROUTER_KEY) {
-	console.log("🚀 AGENT WILL USE OPENROUTER 🚀");
-	const openrouter = createOpenRouter({
-		apiKey: env.OPEN_ROUTER_KEY,
-	});
-	model = openrouter(env.LLM_MODEL);
-} else {
-	model = env.LLM_MODEL;
-}
+export let model:  LanguageModelV2;
+console.log("🚀 AGENT WILL USE OPENROUTER 🚀");
+const openrouter = createOpenRouter({
+	apiKey: env.OPEN_ROUTER_KEY,
+});
+model = openrouter(env.LLM_MODEL);
