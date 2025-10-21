@@ -19,7 +19,7 @@ export async function getTwitterReviewAgent(){
             a. If the user has already mentioned their likes or dislikes, proceed directly to semantic analysis.
             b. Otherwise, ask what they liked and disliked about it.
         3. Once the user provides likes and/or dislikes, perform a semantic sentiment analysis to understand the tone and emotions of their feedback.
-        5. Then, craft a perfect tweet (max 280 characters) including relevant emojis and the official hashtag of the movie/show.
+        5. Then, craft a perfect tweet (****STRICTLY**** max 280 characters) including relevant emojis and the official hashtag of the movie/show.
         6. The tweet should sound human, engaging, and natural.
         7. Use emojis only when they genuinely enhance the tweet.
         8. Ask for confirmation before posting.
