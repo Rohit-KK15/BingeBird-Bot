@@ -30,8 +30,10 @@ export const envSchema = z.object({
  * Throws an error if required environment variables are missing or invalid.
  */
 export const env = envSchema.parse(process.env);
-export let model:  LanguageModelV2;
+export let model: LanguageModelV2;
 console.log("🚀 AGENT WILL USE OPENROUTER 🚀");
+console.log(`LLM_MODEL: ${env.LLM_MODEL}`);
+console.log(`OPEN_ROUTER_KEY: ${env.OPEN_ROUTER_KEY ? "Set" : "Not Set"}`); // Log if key is set, not the key itself
 const openrouter = createOpenRouter({
 	apiKey: env.OPEN_ROUTER_KEY,
 });
