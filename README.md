@@ -1,94 +1,81 @@
-
 <div align="center">
 
-
-# BingeBird - Telegram Bot
+# 🎬 BingeBird – AI Powered Telegram Bot
 
 </div>
 
-BingeBird is an entertainment-based AI Agent integrated as a Telegram Bot that fetches information about Movies, TV Shows, Anime, and all types of entertainment. It helps users craft review tweets and automatically post them on X (formerly Twitter), and also manages a user's watchlist. The entertainment sub-agent leverages the [Entertainment MCP](https://github.com/Rohit-KK15/entertainment-mcp) (Model Context Protocol) server, also developed by me.
+**BingeBird** is an entertainment-based **AI Agent**, built using the **⚙️ ADK-TS by IQAI** framework and integrated as a  **Telegram Bot**.
+It leverages the [ Entertainment MCP](https://github.com/Rohit-KK15/entertainment-mcp) (**Model Context Protocol**) server to fetch comprehensive information about **Movies**, **TV Shows**, **Anime**, and all types of entertainment.
 
-## Features
-- Fetches detailed information about movies, TV shows, anime, and other entertainment content.
-- Assists users in generating and posting review tweets on X (Twitter).
-- Manages a personalized watchlist for users.
-- Integrated as a Telegram Bot for easy interaction.
+BingeBird empowers users to **craft review tweets** , **post them automatically on X (formerly Twitter)**, and efficiently **manage their personalized watchlist** — all through a seamless Telegram experience.
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
-- Node.js v18+
-- pnpm (recommended) or npm/yarn
+## 🌟 Features
 
-### Installation
-```bash
-pnpm install
-```
+- 🎥 **Rich Entertainment Information** – Fetches content via the custom Entertainment MCP.  
+- 🤖 **AI-Powered Review Generation** – Helps generate and post review tweets on X (Twitter).  
+- 📺 **Personalized Watchlist Management** – Manages a personal watchlist using ADK-TS built-in state management.  
+- 💬 **Seamless Telegram Integration** – Chat-based, intuitive experience inside Telegram.  
+- ⚙️ **Built with ADK-TS** – Leverages **ADK-TS (Agent Development Kit for TypeScript)** for robust **agent orchestration** and **tool integration**.  
 
-### Environment Variables
-Copy the example environment file and fill in your credentials:
+---
 
-```bash
-cp .env.example .env
-```
+## 🧠 Technologies Used
 
-**Required variables:**
+- 🧩 **ADK-TS by IQAI** – Core framework for scalable AI agents.  
+    - 🪄 *Scalable AI Agents* – Enables building robust, extensible multi-agent systems.  
+    - 🔄 *Agent Orchestration* – Seamless coordination of multiple agents.  
+    - 🧰 *Tool Integration* – Simplifies incorporation of APIs and external tools.  
+- ⚡ **fastmcp** – Used for the custom Entertainment MCP server, standardizing entertainment API interactions.  
+- 🎞️ **TMDB & OMDB Integration** – For movie, show, and actor data, search, and discovery.  
+- 💬 **MCP-Telegram** – Enables natural Telegram-based user interactions.  
+- 🐦 **Twitter API v2** – For automated review tweet generation and posting.  
+- 🗄️ **PostgreSQL** – Persistent storage for user watchlists.  
 
-- `ADK_DEBUG` — Optional debug mode flag (defaults to `false`)
-- `OPEN_ROUTER_KEY` — API key for OpenRouter (if used)
-- `LLM_MODEL` — LLM model name (default: `openai/gpt-4.1`)
-- `TMDB_API_KEY` — API key for The Movie Database (TMDB)
-- `OMDB_API_KEY` — API key for The Open Movie Database (OMDB)
-- `DATABASE_URL` — Database connection URL
-- `TELEGRAM_BOT_TOKEN` — Telegram bot token
-- `TWITTER_API_KEY` — API key for Twitter/X
-- `TWITTER_API_SECRET` — API secret for Twitter/X
-- `TWITTER_ACCESS_TOKEN` — Access token for Twitter/X
-- `TWITTER_ACCESS_TOKEN_SECRET` — Access token secret for Twitter/X
+---
 
-### Build
-```bash
-pnpm run build
-```
+## 🤖 Agents Built
 
-### Development
-```bash
-pnpm run dev
-```
+- 🧠 **BingeBird Agent** – The main orchestrator handling all entertainment-related tasks.  
+- 💬 **Telegram Agent** – Manages Telegram communication and user experience.  
+- 🎬 **Entertainment Agent** – Fetches and processes entertainment data, and manages user’s watchlist.  
+- 🐦 **Twitter Review Agent** – Generates and posts review tweets on Twitter.  
 
-### Production
-```bash
-pnpm run start
-```
+---
 
-## Usage
-The agent will start, initialize all toolsets, and be ready to interact via Telegram. It will respond to user queries for entertainment information, help create and post reviews on X, and manage watchlists.
+## 🔗 Entertainment MCP – Model Context Protocol Server
 
-## 📁 Project Structure
-```
-├── src/
-│   ├── agents/
-│   │   ├── binge-bird-agent/           # Root BingeBird Agent
-│   │   │   ├── agent.ts
-│   │   │   └── sub-agents/
-│   │   │       ├── entertainment-agent/ # Fetches entertainment info
-│   │   │       │   ├── agent.ts
-│   │   │       │   └── tool.ts
-│   │   │       ├── twitter-review-agent/  # Helps craft and post Twitter reviews
-│   │   │       │   ├── agent.ts
-│   │   │       │   └── tool.ts
-│   │   │       └── watchlist-agent/       # Manages user watchlists
-│   │   │           ├── agent.ts
-│   │   │           └── tool.ts
-│   │   └── telegram-agent/               # Handles Telegram interactions
-│   │       ├── agent.ts
-│   │       └── tool.ts
-│   ├── env.ts                        # Environment variable validation
-│   ├── index.ts                      # Main execution entry point
-│   ├── services/
-│   │   └── twitter.ts                # Twitter API service
-│   └── types.ts                      # Type definitions
-```
+The **Entertainment MCP** server (also developed by me) standardizes and abstracts multiple entertainment API interactions.
+It provides the following core functionalities:
 
-## License
-MIT
+- 🎥 **OMDB Integration** – Retrieves movie, series, and episode info including IMDb ratings.  
+- 🎞️ **TMDB Integration**  
+- 🔍 Get detailed movie/TV show info.  
+- 🎬 Search and explore collections.  
+- 👥 Discover titles by actor.  
+- 🏷️ Filter by genre.  
+- 🌟 Retrieve popular and trending titles.  
+- 📅 Discover by release year or IMDb rating.  
+- 🎯 Get smart entertainment suggestions.  
+
+---
+
+## 🧭 Architectural Flowchart
+
+![mermaid-flow-1x.png](https://cdn.dorahacks.io/static/files/19a095830e6ee0aa71bdf034ace9baa6.png)
+
+---
+
+## 🔒 Note
+
+BingeBird is a **personal Telegram bot**, as it requires **Twitter API access tokens and secret keys** from your own Twitter developer account in order to post tweets automatically.
+This ensures complete privacy and control over your personal Twitter activity.
+
+---
+
+<div align="center">
+
+✨ *Built with ADK-TS for the IQAI Hackathon — by Rohit KK* ✨
+
+</div>
