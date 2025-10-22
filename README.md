@@ -7,7 +7,7 @@
 **BingeBird** is an entertainment-based **AI Agent**, built using the **⚙️ ADK-TS by IQAI** framework and integrated as a  **Telegram Bot**.
 It leverages the [ Entertainment MCP](https://github.com/Rohit-KK15/entertainment-mcp) (**Model Context Protocol**) server to fetch comprehensive information about **Movies**, **TV Shows**, **Anime**, and all types of entertainment.
 
-BingeBird empowers users to **craft review tweets** , **post them automatically on X (formerly Twitter)**, and efficiently **manage their personalized watchlist** — all through a seamless Telegram experience.
+BingeBird empowers users to **discover movies or shows**, **craft review tweets**, **post them automatically on X (formerly Twitter)**, and efficiently **manage their personalized watchlist** — all through a seamless Telegram experience.
 
 ---
 
@@ -51,13 +51,13 @@ It provides the following core functionalities:
 
 - 🎥 **OMDB Integration** – Retrieves movie, series, and episode info including IMDb ratings.  
 - 🎞️ **TMDB Integration**  
-- 🔍 Get detailed movie/TV show info.  
-- 🎬 Search and explore collections.  
-- 👥 Discover titles by actor.  
-- 🏷️ Filter by genre.  
-- 🌟 Retrieve popular and trending titles.  
-- 📅 Discover by release year or IMDb rating.  
-- 🎯 Get smart entertainment suggestions.  
+    - 🔍 Get detailed movie/TV show info.  
+    - 🎬 Search and explore collections.  
+    - 👥 Discover titles by actor.  
+    - 🏷️ Filter by genre.  
+    - 🌟 Retrieve popular and trending titles.  
+    - 📅 Discover by release year or IMDb rating.  
+    - 🎯 Get smart entertainment suggestions.  
 
 ---
 
