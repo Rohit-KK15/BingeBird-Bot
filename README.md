@@ -18,7 +18,7 @@ BingeBird is an entertainment-based AI Agent integrated as a Telegram Bot that f
 
 ### Prerequisites
 - Node.js v18+
-- pnpm (recommended) or npm/yarn
+- pnpm
 
 ### Installation
 ```bash
