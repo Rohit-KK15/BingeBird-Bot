@@ -33,9 +33,9 @@
 	"author": "RohitKK",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/IQAICOM/adk-agent-starter/issues"
+		"url": "https://github.com/Rohit-KK15/BingeBird-Bot/issues"
 	},
-	"homepage": "https://github.com/IQAICOM/adk-agent-starter#readme",
+	"homepage": "https://github.com/Rohit-KK15/BingeBird-Bot#readme",
 	"dependencies": {
 		"@iqai/adk": "^0.4.0",
 		"@iqai/adk-cli": "^0.3.16",
